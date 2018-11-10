@@ -1,0 +1,32 @@
+{% extends 'admin/master.html' %}
+{% import 'admin/lib.html' as lib with context %}
+{% import 'admin/static.html' as admin_static with context%}
+{% import 'admin/model/layout.html' as model_layout with context %}
+
+{% block head %}
+    {{ super() }}
+    {{ lib.form_css() }}
+{% endblock %}
+
+{% block body %}
+    <h2>DEBUGGER</h2>
+    {% block model_menu_bar %}
+    {% endblock %}
+
+
+    <form class="form-inline" action="/admin/testview/breakpoint" method="post" enctype=multipart/form-data style="margin-top: 50px;">
+      {% if csrf_token %}
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+      {% endif %}
+      <input class="form-control" type="text" name='dag_id' placeholder="dag_id"/>
+      <input class="form-control" type="text" name='task_id' placeholder="task_id"/>
+      <input class="btn btn-default" type="submit" value="Add breakpoint!"/>
+    </form>
+
+{% endblock %}
+
+{% block tail %}
+    {{ super() }}
+    <script src="{{ admin_static.url(filename='admin/js/filters.js') }}"></script>
+    {{ lib.form_js() }}
+{% endblock %}

@@ -1,0 +1,100 @@
+[2018-11-09 22:42:11,688] {models.py:1335} INFO - Dependencies all met for <TaskInstance: naveed_test.breakpoint_sensor 2018-11-10T05:10:00+00:00 [queued]>
+[2018-11-09 22:42:11,709] {models.py:1335} INFO - Dependencies all met for <TaskInstance: naveed_test.breakpoint_sensor 2018-11-10T05:10:00+00:00 [queued]>
+[2018-11-09 22:42:11,710] {models.py:1547} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2018-11-09 22:42:11,765] {models.py:1569} INFO - Executing <Task(BreakPointSensor): breakpoint_sensor> on 2018-11-10T05:10:00+00:00
+[2018-11-09 22:42:11,766] {base_task_runner.py:124} INFO - Running: ['bash', '-c', u'airflow run naveed_test breakpoint_sensor 2018-11-10T05:10:00+00:00 --job_id 5 --raw -sd DAGS_FOLDER/test.py --cfg_path /var/folders/zk/29b_jkbx6z58gzz4zv4tzd_40000gn/T/tmp82h1sM']
+[2018-11-09 22:42:14,904] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:14,904] {settings.py:174} INFO - setting.configure_orm(): Using pool settings. pool_size=5, pool_recycle=3600
+[2018-11-09 22:42:14,939] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor /Users/naveed/anaconda2/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2018-11-09 22:42:14,940] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   """)
+[2018-11-09 22:42:15,222] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,221] {__init__.py:51} INFO - Using executor LocalExecutor
+[2018-11-09 22:42:15,360] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor /Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/bin/cli.py:1595: DeprecationWarning: The celeryd_concurrency option in [celery] has been renamed to worker_concurrency - the old setting has been used, but please update your config.
+[2018-11-09 22:42:15,360] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   default=conf.get('celery', 'worker_concurrency')),
+[2018-11-09 22:42:15,423] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,423] {cli.py:464} ERROR - Section ldap Option bind_user does not exist in the config!
+[2018-11-09 22:42:15,424] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,423] {cli.py:464} ERROR - Section ldap Option search_scope does not exist in the config!
+[2018-11-09 22:42:15,424] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,423] {cli.py:464} ERROR - Section ldap Option basedn does not exist in the config!
+[2018-11-09 22:42:15,424] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,423] {cli.py:464} ERROR - Section ldap Option group_member_attr does not exist in the config!
+[2018-11-09 22:42:15,424] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option uri does not exist in the config!
+[2018-11-09 22:42:15,425] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option data_profiler_filter does not exist in the config!
+[2018-11-09 22:42:15,425] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option bind_password does not exist in the config!
+[2018-11-09 22:42:15,425] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option cacert does not exist in the config!
+[2018-11-09 22:42:15,425] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option user_filter does not exist in the config!
+[2018-11-09 22:42:15,426] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option user_name_attr does not exist in the config!
+[2018-11-09 22:42:15,426] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section ldap Option superuser_filter does not exist in the config!
+[2018-11-09 22:42:15,426] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section atlas Option username does not exist in the config!
+[2018-11-09 22:42:15,426] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section atlas Option host does not exist in the config!
+[2018-11-09 22:42:15,426] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section atlas Option password does not exist in the config!
+[2018-11-09 22:42:15,427] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,424] {cli.py:464} ERROR - Section atlas Option port does not exist in the config!
+[2018-11-09 22:42:15,427] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section atlas Option sasl_enabled does not exist in the config!
+[2018-11-09 22:42:15,427] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option logs_volume_subpath does not exist in the config!
+[2018-11-09 22:42:15,427] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option git_repo does not exist in the config!
+[2018-11-09 22:42:15,428] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option git_user does not exist in the config!
+[2018-11-09 22:42:15,428] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option worker_container_repository does not exist in the config!
+[2018-11-09 22:42:15,428] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option image_pull_secrets does not exist in the config!
+[2018-11-09 22:42:15,428] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option git_sync_container_tag does not exist in the config!
+[2018-11-09 22:42:15,428] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option in_cluster does not exist in the config!
+[2018-11-09 22:42:15,429] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,425] {cli.py:464} ERROR - Section kubernetes Option namespace does not exist in the config!
+[2018-11-09 22:42:15,429] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option dags_volume_subpath does not exist in the config!
+[2018-11-09 22:42:15,429] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option git_sync_init_container_name does not exist in the config!
+[2018-11-09 22:42:15,429] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option dags_volume_claim does not exist in the config!
+[2018-11-09 22:42:15,430] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option git_subpath does not exist in the config!
+[2018-11-09 22:42:15,430] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option worker_service_account_name does not exist in the config!
+[2018-11-09 22:42:15,430] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option git_branch does not exist in the config!
+[2018-11-09 22:42:15,430] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option logs_volume_claim does not exist in the config!
+[2018-11-09 22:42:15,431] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option gcp_service_account_keys does not exist in the config!
+[2018-11-09 22:42:15,431] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option airflow_configmap does not exist in the config!
+[2018-11-09 22:42:15,431] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option git_sync_container_repository does not exist in the config!
+[2018-11-09 22:42:15,431] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option worker_container_tag does not exist in the config!
+[2018-11-09 22:42:15,431] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,426] {cli.py:464} ERROR - Section kubernetes Option git_password does not exist in the config!
+[2018-11-09 22:42:15,432] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section kubernetes Option delete_worker_pods does not exist in the config!
+[2018-11-09 22:42:15,432] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section lineage Option backend does not exist in the config!
+[2018-11-09 22:42:15,432] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section hive Option default_hive_mapred_queue does not exist in the config!
+[2018-11-09 22:42:15,432] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section dask Option cluster_address does not exist in the config!
+[2018-11-09 22:42:15,432] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section dask Option tls_cert does not exist in the config!
+[2018-11-09 22:42:15,433] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section dask Option tls_key does not exist in the config!
+[2018-11-09 22:42:15,433] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section dask Option tls_ca does not exist in the config!
+[2018-11-09 22:42:15,433] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,427] {cli.py:464} ERROR - Section elasticsearch Option elasticsearch_host does not exist in the config!
+[2018-11-09 22:42:15,434] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,428] {cli.py:464} ERROR - Section elasticsearch Option elasticsearch_log_id_template does not exist in the config!
+[2018-11-09 22:42:15,434] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,428] {cli.py:464} ERROR - Section elasticsearch Option elasticsearch_end_of_log_mark does not exist in the config!
+[2018-11-09 22:42:15,434] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,431] {models.py:258} INFO - Filling up the DagBag from /Users/naveed/Mira/hackathon/airflow/dags/test.py
+[2018-11-09 22:42:15,504] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,504] {example_kubernetes_operator.py:54} WARNING - Could not import KubernetesPodOperator: No module named kubernetes
+[2018-11-09 22:42:15,505] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,504] {example_kubernetes_operator.py:55} WARNING - Install kubernetes dependencies with:     pip install airflow['kubernetes']
+[2018-11-09 22:42:15,673] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor [2018-11-09 22:42:15,673] {cli.py:492} INFO - Running <TaskInstance: naveed_test.breakpoint_sensor 2018-11-10T05:10:00+00:00 [running]> on host naveeds-MacBook-Pro.local
+[2018-11-09 22:42:41,744] {logging_mixin.py:95} INFO - [2018-11-09 22:42:41,743] {jobs.py:2680} WARNING - State of this instance has been externally set to shutdown. Taking the poison pill.
+
+[2018-11-09 22:42:41,782] {helpers.py:240} INFO - Sending 15 to GPID 3991
+[2018-11-09 22:42:41,782] {models.py:1610} ERROR - Received SIGTERM. Terminating subprocesses.
+[2018-11-09 22:42:41,800] {models.py:1736} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/models.py", line 1633, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/sensors/base_sensor_operator.py", line 78, in execute
+    sleep(self.poke_interval)
+  File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/models.py", line 1612, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+AirflowException: Task received SIGTERM signal
+[2018-11-09 22:42:41,803] {models.py:1764} INFO - Marking task as FAILED.
+[2018-11-09 22:42:41,832] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor Traceback (most recent call last):
+[2018-11-09 22:42:41,832] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/bin/airflow", line 32, in <module>
+[2018-11-09 22:42:41,832] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     args.func(args)
+[2018-11-09 22:42:41,833] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2018-11-09 22:42:41,834] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     return f(*args, **kwargs)
+[2018-11-09 22:42:41,834] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/bin/cli.py", line 498, in run
+[2018-11-09 22:42:41,834] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     _run(args, dag, ti)
+[2018-11-09 22:42:41,835] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/bin/cli.py", line 402, in _run
+[2018-11-09 22:42:41,835] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     pool=args.pool,
+[2018-11-09 22:42:41,835] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2018-11-09 22:42:41,836] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     return func(*args, **kwargs)
+[2018-11-09 22:42:41,836] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/models.py", line 1633, in _run_raw_task
+[2018-11-09 22:42:41,836] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     result = task_copy.execute(context=context)
+[2018-11-09 22:42:41,837] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/sensors/base_sensor_operator.py", line 78, in execute
+[2018-11-09 22:42:41,837] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     sleep(self.poke_interval)
+[2018-11-09 22:42:41,837] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor   File "/Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/models.py", line 1612, in signal_handler
+[2018-11-09 22:42:41,838] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor     raise AirflowException("Task received SIGTERM signal")
+[2018-11-09 22:42:41,839] {base_task_runner.py:107} INFO - Job 5: Subtask breakpoint_sensor airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2018-11-09 22:42:41,924] {helpers.py:230} INFO - Process psutil.Process(pid=3991 (terminated)) (3991) terminated with exit code 1
+[2018-11-09 22:42:41,934] {logging_mixin.py:95} INFO - [2018-11-09 22:42:41,933] {jobs.py:2612} INFO - Task exited with return code 0
+

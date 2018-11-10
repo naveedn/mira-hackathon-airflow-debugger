@@ -1,0 +1,67 @@
+[2018-11-10 04:53:18,144] {models.py:1335} INFO - Dependencies all met for <TaskInstance: naveed_test.run_this_first 2018-11-10T12:53:12.669338+00:00 [queued]>
+[2018-11-10 04:53:18,168] {models.py:1335} INFO - Dependencies all met for <TaskInstance: naveed_test.run_this_first 2018-11-10T12:53:12.669338+00:00 [queued]>
+[2018-11-10 04:53:18,168] {models.py:1547} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2018-11-10 04:53:18,188] {models.py:1569} INFO - Executing <Task(DummyOperator): run_this_first> on 2018-11-10T12:53:12.669338+00:00
+[2018-11-10 04:53:18,188] {base_task_runner.py:124} INFO - Running: ['bash', '-c', u'airflow run naveed_test run_this_first 2018-11-10T12:53:12.669338+00:00 --job_id 139 --raw -sd DAGS_FOLDER/test.py --cfg_path /var/folders/zk/29b_jkbx6z58gzz4zv4tzd_40000gn/T/tmpqnBR5x']
+[2018-11-10 04:53:20,886] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:20,885] {settings.py:174} INFO - setting.configure_orm(): Using pool settings. pool_size=5, pool_recycle=3600
+[2018-11-10 04:53:20,909] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first /Users/naveed/anaconda2/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2018-11-10 04:53:20,910] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first   """)
+[2018-11-10 04:53:21,069] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,068] {__init__.py:51} INFO - Using executor LocalExecutor
+[2018-11-10 04:53:21,185] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first /Users/naveed/anaconda2/lib/python2.7/site-packages/airflow/bin/cli.py:1595: DeprecationWarning: The celeryd_concurrency option in [celery] has been renamed to worker_concurrency - the old setting has been used, but please update your config.
+[2018-11-10 04:53:21,185] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first   default=conf.get('celery', 'worker_concurrency')),
+[2018-11-10 04:53:21,246] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,246] {cli.py:464} ERROR - Section ldap Option bind_user does not exist in the config!
+[2018-11-10 04:53:21,246] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,246] {cli.py:464} ERROR - Section ldap Option search_scope does not exist in the config!
+[2018-11-10 04:53:21,247] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,246] {cli.py:464} ERROR - Section ldap Option basedn does not exist in the config!
+[2018-11-10 04:53:21,248] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,246] {cli.py:464} ERROR - Section ldap Option group_member_attr does not exist in the config!
+[2018-11-10 04:53:21,248] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,246] {cli.py:464} ERROR - Section ldap Option uri does not exist in the config!
+[2018-11-10 04:53:21,248] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,247] {cli.py:464} ERROR - Section ldap Option data_profiler_filter does not exist in the config!
+[2018-11-10 04:53:21,249] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,247] {cli.py:464} ERROR - Section ldap Option bind_password does not exist in the config!
+[2018-11-10 04:53:21,249] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,247] {cli.py:464} ERROR - Section ldap Option cacert does not exist in the config!
+[2018-11-10 04:53:21,250] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,247] {cli.py:464} ERROR - Section ldap Option user_filter does not exist in the config!
+[2018-11-10 04:53:21,250] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,247] {cli.py:464} ERROR - Section ldap Option user_name_attr does not exist in the config!
+[2018-11-10 04:53:21,250] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,248] {cli.py:464} ERROR - Section ldap Option superuser_filter does not exist in the config!
+[2018-11-10 04:53:21,251] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,248] {cli.py:464} ERROR - Section atlas Option username does not exist in the config!
+[2018-11-10 04:53:21,251] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,248] {cli.py:464} ERROR - Section atlas Option host does not exist in the config!
+[2018-11-10 04:53:21,251] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,248] {cli.py:464} ERROR - Section atlas Option password does not exist in the config!
+[2018-11-10 04:53:21,252] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,248] {cli.py:464} ERROR - Section atlas Option port does not exist in the config!
+[2018-11-10 04:53:21,252] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,248] {cli.py:464} ERROR - Section atlas Option sasl_enabled does not exist in the config!
+[2018-11-10 04:53:21,252] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,249] {cli.py:464} ERROR - Section kubernetes Option logs_volume_subpath does not exist in the config!
+[2018-11-10 04:53:21,253] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,249] {cli.py:464} ERROR - Section kubernetes Option git_repo does not exist in the config!
+[2018-11-10 04:53:21,253] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,249] {cli.py:464} ERROR - Section kubernetes Option git_user does not exist in the config!
+[2018-11-10 04:53:21,253] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,249] {cli.py:464} ERROR - Section kubernetes Option worker_container_repository does not exist in the config!
+[2018-11-10 04:53:21,254] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,250] {cli.py:464} ERROR - Section kubernetes Option image_pull_secrets does not exist in the config!
+[2018-11-10 04:53:21,254] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,250] {cli.py:464} ERROR - Section kubernetes Option git_sync_container_tag does not exist in the config!
+[2018-11-10 04:53:21,254] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,250] {cli.py:464} ERROR - Section kubernetes Option in_cluster does not exist in the config!
+[2018-11-10 04:53:21,255] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,250] {cli.py:464} ERROR - Section kubernetes Option namespace does not exist in the config!
+[2018-11-10 04:53:21,255] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option dags_volume_subpath does not exist in the config!
+[2018-11-10 04:53:21,256] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option git_sync_init_container_name does not exist in the config!
+[2018-11-10 04:53:21,256] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option dags_volume_claim does not exist in the config!
+[2018-11-10 04:53:21,257] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option git_subpath does not exist in the config!
+[2018-11-10 04:53:21,257] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option worker_service_account_name does not exist in the config!
+[2018-11-10 04:53:21,257] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option git_branch does not exist in the config!
+[2018-11-10 04:53:21,258] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,251] {cli.py:464} ERROR - Section kubernetes Option logs_volume_claim does not exist in the config!
+[2018-11-10 04:53:21,258] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,252] {cli.py:464} ERROR - Section kubernetes Option gcp_service_account_keys does not exist in the config!
+[2018-11-10 04:53:21,258] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,252] {cli.py:464} ERROR - Section kubernetes Option airflow_configmap does not exist in the config!
+[2018-11-10 04:53:21,259] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,252] {cli.py:464} ERROR - Section kubernetes Option git_sync_container_repository does not exist in the config!
+[2018-11-10 04:53:21,259] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,252] {cli.py:464} ERROR - Section kubernetes Option worker_container_tag does not exist in the config!
+[2018-11-10 04:53:21,259] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,252] {cli.py:464} ERROR - Section kubernetes Option git_password does not exist in the config!
+[2018-11-10 04:53:21,260] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,252] {cli.py:464} ERROR - Section kubernetes Option delete_worker_pods does not exist in the config!
+[2018-11-10 04:53:21,260] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,253] {cli.py:464} ERROR - Section lineage Option backend does not exist in the config!
+[2018-11-10 04:53:21,260] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,253] {cli.py:464} ERROR - Section hive Option default_hive_mapred_queue does not exist in the config!
+[2018-11-10 04:53:21,261] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,253] {cli.py:464} ERROR - Section dask Option cluster_address does not exist in the config!
+[2018-11-10 04:53:21,261] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,253] {cli.py:464} ERROR - Section dask Option tls_cert does not exist in the config!
+[2018-11-10 04:53:21,262] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,254] {cli.py:464} ERROR - Section dask Option tls_key does not exist in the config!
+[2018-11-10 04:53:21,262] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,254] {cli.py:464} ERROR - Section dask Option tls_ca does not exist in the config!
+[2018-11-10 04:53:21,262] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,254] {cli.py:464} ERROR - Section elasticsearch Option elasticsearch_host does not exist in the config!
+[2018-11-10 04:53:21,263] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,254] {cli.py:464} ERROR - Section elasticsearch Option elasticsearch_log_id_template does not exist in the config!
+[2018-11-10 04:53:21,263] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,254] {cli.py:464} ERROR - Section elasticsearch Option elasticsearch_end_of_log_mark does not exist in the config!
+[2018-11-10 04:53:21,263] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,261] {models.py:258} INFO - Filling up the DagBag from /Users/naveed/Mira/hackathon/airflow/dags/test.py
+[2018-11-10 04:53:21,364] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,363] {example_kubernetes_operator.py:54} WARNING - Could not import KubernetesPodOperator: No module named kubernetes
+[2018-11-10 04:53:21,364] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,363] {example_kubernetes_operator.py:55} WARNING - Install kubernetes dependencies with:     pip install airflow['kubernetes']
+[2018-11-10 04:53:21,612] {base_task_runner.py:107} INFO - Job 139: Subtask run_this_first [2018-11-10 04:53:21,611] {cli.py:492} INFO - Running <TaskInstance: naveed_test.run_this_first 2018-11-10T12:53:12.669338+00:00 [running]> on host naveeds-MacBook-Pro.local
+[2018-11-10 04:53:23,197] {logging_mixin.py:95} INFO - [2018-11-10 04:53:23,197] {jobs.py:2612} INFO - Task exited with return code 0
+
