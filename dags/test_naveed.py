@@ -112,4 +112,6 @@ run_this_first_parallel >> sleep >> run_this_last_parallel
 
 # if __name__ == "__main__":
 #   dag.tree_view()
-# generate_breakpoints_from_ids('sleep', 'naveed_test')
+
+generate_breakpoints_from_ids('sleep', 'naveed_test')
+generate_breakpoints_from_ids('run_this_last_parallel', 'naveed_test')
